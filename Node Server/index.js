@@ -2,7 +2,7 @@
 
 //Server Which will handle socket io connections--
 
-const io = require("socket.io")(6000)
+const io = require("socket.io")(8000)
 
 const users = {};
 //For every New Connection that function Listen--
@@ -10,7 +10,8 @@ io.on("connection",socket=>{
 
     //When New User Joined the chat----
 
-    socket.on("new-user-joined",name=>{
+    socket.on("new-user-joined", name =>{
+        // console.log("New User",name)
         users[socket.id] = name;
         socket.broadcast.emit('user-joined',name);
     });
