@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Chat App</title>
     <script src="JS/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9c413ef2f7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <img class="logo" src="logo.png" alt="LOADING">
+      <img class="logo" src="logo.png" alt="LOADING" />
     </nav>
     <div class="container">
-    <div class="message right">Hello my friend</div>
-    <div class="message left">Hello my friend, i am fine</div>
+      <div class="message right">Hello my friend</div>
+      <div class="message left">Hello my friend, i am fine</div>
+        
     </div>
-</body>
+    <div class="send">
+      <form action="#" id="send_container">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          placeholder="  Write Your Messsage Here"
+        />
+        <!-- <i class="fa fa-paper-plane btn" aria-hidden="true" type="submit"></i> -->
+        <button class="btn" type="submit"><img src="paper-plane.png" alt="loading"/></button>  
+      </form>
+    </div>
+  </body>
 </html>
