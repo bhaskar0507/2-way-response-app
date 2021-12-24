@@ -1,0 +1,47 @@
+
+.logo{
+    display:block;
+    margin:auto;
+    width:100px;
+    height:70px;
+}
+
+/* Contains our all the messages---- */
+.container{
+    max-width: 955px;
+    margin:auto;
+    background: rgb(193, 62, 62);
+  background: linear-gradient(
+    139deg,
+    rgb(193, 62, 62, 1) 0%,
+    rgb(230, 179, 50, 1) 100%
+  );
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height:60vh;
+}
+
+/* Contains Message of every individual--- */
+.message{
+background-color:rgb(241, 231, 231);
+width:34%;
+padding:10px;
+margin:20px 17px;
+border:2px solid black;
+border-radius:10px;
+}
+
+.left{
+    float:left;
+    clear:left;
+
+}
+
+.right{
+    float:right;
+    clear:right;
+
+}
